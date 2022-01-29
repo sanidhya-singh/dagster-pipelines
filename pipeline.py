@@ -11,6 +11,6 @@ def hello(name: str):
     print(f"Hello, {name}!")
 
 
-@job
+@job(description="Hello world Dagster pipeline")
 def hello_dagster():
     hello(get_name())
